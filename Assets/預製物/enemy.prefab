@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 1316147949}
   - component: {fileID: 1636772935}
   - component: {fileID: 1636772940}
+  - component: {fileID: 1636772941}
+  - component: {fileID: 1607171839}
   m_Layer: 6
   m_Name: Enemy
   m_TagString: Untagged
@@ -207,3 +209,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameTarget: shoot
   prefabExplosion: {fileID: 5772154938009770194, guid: 9785a1a336ddc6640915dfb567925ad0, type: 3}
+--- !u!114 &1636772941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324703670460239968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb373d31ddc384c861bc02189a1872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -4.36
+--- !u!114 &1607171839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 324703670460239968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb373d31ddc384c861bc02189a1872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -4.36
