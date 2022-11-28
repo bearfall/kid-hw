@@ -8,6 +8,11 @@ namespace bearfall
         private string nameTarget;
         [SerializeField, Header("爆炸欲製物")]
         private GameObject prefabExplosion;
+        [Header("受傷與爆炸音效")]
+        [SerializeField] 
+        private AudioClip soundHit;
+        [SerializeField]
+        private AudioClip soundExplosion;
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
@@ -17,6 +22,9 @@ namespace bearfall
             {
                 Instantiate(prefabExplosion, transform.position, transform.rotation);
 
+
+                SoundSystem.instance.PlaySound(soundHit, new Vector2(0.7f, 0.9f));
+                SoundSystem.instance.PlaySound(soundExplosion, new Vector2(1.2f, 1.5f));
                 Destroy(gameObject);
             }
         }

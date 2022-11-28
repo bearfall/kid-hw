@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2228195211321667251}
   - component: {fileID: -7440120423742948844}
   - component: {fileID: -1377835160050953647}
+  - component: {fileID: -7057502378388323602}
   m_Layer: 7
   m_Name: shoot
   m_TagString: Untagged
@@ -156,3 +157,16 @@ ConstantForce2D:
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: 20, y: 0}
   m_Torque: 0
+--- !u!114 &-7057502378388323602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4904140651668555805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca4af995e9bb17489bdede8fe6e7fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 3

@@ -15,5 +15,9 @@ namespace bearfall
             //©µ¿ð©I¥s³]©w
             InvokeRepeating("SpawnBullet", 0, interval);
         }
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
     }
 }

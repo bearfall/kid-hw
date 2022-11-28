@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 namespace bearfall
@@ -19,5 +18,16 @@ namespace bearfall
             //刪除(物件，刪除時間)
             Destroy(gameObject, destroyTime);
         }
+        //可見事件:當渲染元件(Rander)出現在Scene或Game時執行一次
+        private void OnBecameVisible()
+        {
+            
+        }
+        //可見事件:當渲染元件(Rander)出現在Scene或Game時執行一次
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
+
     }
 }
