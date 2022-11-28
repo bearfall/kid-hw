@@ -1137,6 +1137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 568210100}
   - component: {fileID: 568210099}
+  - component: {fileID: 568210101}
   m_Layer: 0
   m_Name: "\u904A\u6232\u7D42\u9EDE"
   m_TagString: Untagged
@@ -1185,6 +1186,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &568210101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568210098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb373d31ddc384c861bc02189a1872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -3.5
 --- !u!1 &609799941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2626,6 +2640,7 @@ GameObject:
   - component: {fileID: 1590209284}
   - component: {fileID: 1590209285}
   - component: {fileID: 1590209286}
+  - component: {fileID: 1590209287}
   m_Layer: 3
   m_Name: player1
   m_TagString: Untagged
@@ -2787,6 +2802,18 @@ MonoBehaviour:
   prefabExplosion: {fileID: 5772154938009770194, guid: 9785a1a336ddc6640915dfb567925ad0, type: 3}
   soundHit: {fileID: 8300000, guid: 5a734bcdccebe4d0aa169e4bc43d5210, type: 3}
   soundExplosion: {fileID: 8300000, guid: eeac7ff7e4ad44587b11429a7e7b8fc1, type: 3}
+--- !u!114 &1590209287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1590209279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a792909801e104e42ac936b3a8f6a254, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1600082415
 GameObject:
   m_ObjectHideFlags: 0
