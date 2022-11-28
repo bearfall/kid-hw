@@ -1,17 +1,17 @@
-
+ï»¿
 using UnityEngine;
 namespace bearfall
 {
     public class FireSystemBase : MonoBehaviour
     {
-        [SerializeField, Header("¤l¼u±ı»sª«")]
+        [SerializeField, Header("å­å½ˆæ¬²è£½ç‰©")]
         private GameObject prefabBullet;
-        [SerializeField, Header("¤l¼u¥Í¦¨ÂI")]
+        [SerializeField, Header("å­å½ˆç”Ÿæˆé»")]
         private Transform pointSpawn;
-        [SerializeField, Header("µo®g­µ®Ä")]
+        [SerializeField, Header("ç™¼å°„éŸ³æ•ˆ")]
         private AudioClip soundFire;
 
-        //¥Í¦¨¤l¼u
+        //ç”Ÿæˆå­å½ˆ
         protected void SpawnBullet()
         {
             Instantiate(prefabBullet, pointSpawn.position, pointSpawn.rotation);

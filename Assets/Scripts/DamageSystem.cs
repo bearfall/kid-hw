@@ -1,14 +1,14 @@
-
+ï»¿
 using UnityEngine;
 namespace bearfall
 {
     public class DamageSystem : MonoBehaviour
     {
-        [SerializeField, Header("·|³y¦¨¶Ë®`ªº¥Ø¼Ğ")]
+        [SerializeField, Header("æœƒé€ æˆå‚·å®³çš„ç›®æ¨™")]
         private string nameTarget;
-        [SerializeField, Header("Ãz¬µ±ı»sª«")]
+        [SerializeField, Header("çˆ†ç‚¸æ¬²è£½ç‰©")]
         private GameObject prefabExplosion;
-        [Header("¨ü¶Ë»PÃz¬µ­µ®Ä")]
+        [Header("å—å‚·èˆ‡çˆ†ç‚¸éŸ³æ•ˆ")]
         [SerializeField] 
         private AudioClip soundHit;
         [SerializeField]
@@ -16,7 +16,7 @@ namespace bearfall
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            //print("¸I¼²:" + collision.gameObject);
+            //print("ç¢°æ’:" + collision.gameObject);
 
             if (collision.gameObject.name.Contains(nameTarget))
             {

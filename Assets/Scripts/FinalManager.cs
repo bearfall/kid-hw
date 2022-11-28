@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -6,7 +6,7 @@ using System.Collections;
 namespace bearfall
 {
     /// <summary>
-    /// µ²§ôºŞ²z¾¹
+    /// çµæŸç®¡ç†å™¨
     /// </summary>
 
     public class FinalManager : MonoBehaviour
@@ -14,30 +14,30 @@ namespace bearfall
 
         public static FinalManager instance;
         /// <summary>
-        /// µ²§ôµe¥¬
+        /// çµæŸç•«å¸ƒ
         /// </summary>
         private CanvasGroup groupFinal;
         /// <summary>
-        /// µ²§ô¼ĞÃD
+        /// çµæŸæ¨™é¡Œ
         /// </summary>
         private TextMeshProUGUI textTitle;
         /// <summary>
-        /// ­«·s¹CÀ¸
+        /// é‡æ–°éŠæˆ²
         /// </summary>
         private Button btnReplay;
         private void Awake()
         {
             instance = this;
 
-            groupFinal = GameObject.Find("µ²§ôµe¥¬").GetComponent<CanvasGroup>();
-            textTitle = GameObject.Find("µ²§ô¼ĞÃD").GetComponent<TextMeshProUGUI>();
-            btnReplay = GameObject.Find("­«·s¹CÀ¸").GetComponent<Button>();
+            groupFinal = GameObject.Find("çµæŸç•«å¸ƒ").GetComponent<CanvasGroup>();
+            textTitle = GameObject.Find("çµæŸæ¨™é¡Œ").GetComponent<TextMeshProUGUI>();
+            btnReplay = GameObject.Find("é‡æ–°éŠæˆ²").GetComponent<Button>();
             btnReplay.onClick.AddListener(Replay);
         }
         /// <summary>
-        /// ¹CÀ¸µ²§ô
+        /// éŠæˆ²çµæŸ
         /// </summary>
-        /// <param name="title">¹CÀ¸¼ĞÃD</param>
+        /// <param name="title">éŠæˆ²æ¨™é¡Œ</param>
         public void GameOver(string title)
         {
             textTitle.text = title;
@@ -46,7 +46,7 @@ namespace bearfall
         }
 
         /// <summary>
-        /// ²H¤J
+        /// æ·¡å…¥
         /// </summary>
         private IEnumerator FadeIn()
         {
@@ -62,7 +62,7 @@ namespace bearfall
 
         private void Replay()
         {
-            SceneManager.LoadScene("¶}©l¿ï³æ");
+            SceneManager.LoadScene("é–‹å§‹é¸å–®");
         }
     }
 }

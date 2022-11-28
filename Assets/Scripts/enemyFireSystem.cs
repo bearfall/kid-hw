@@ -1,18 +1,18 @@
-
+ï»¿
 using UnityEngine;
 namespace bearfall
 {
 
     public class enemyFireSystem : FireSystemBase
     {
-        [SerializeField, Header("¥Í¦¨¶¡¹j"), Range(0, 3)]
+        [SerializeField, Header("ç”Ÿæˆé–“éš”"), Range(0, 3)]
         private float interval = 1.5f;
         private void Awake()
         {
-            //©I¥s¦Û­q¤èªk
+            //å‘¼å«è‡ªè¨‚æ–¹æ³•
             //SpawnBullet();
 
-            //©µ¿ğ©I¥s³]©w
+            //å»¶é²å‘¼å«è¨­å®š
             InvokeRepeating("SpawnBullet", 0, interval);
         }
         private void OnBecameInvisible()

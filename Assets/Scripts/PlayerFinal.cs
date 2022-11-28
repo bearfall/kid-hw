@@ -1,9 +1,9 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 namespace bearfall
 {
     /// <summary>
-    /// ª±®aµ²§ôºŞ²z:¦º¤`©Î¹LÃö
+    /// ç©å®¶çµæŸç®¡ç†:æ­»äº¡æˆ–éé—œ
     /// </summary>
 
     public class PlayerFinal : MonoBehaviour
@@ -11,14 +11,14 @@ namespace bearfall
 
         private void OnDestroy()
         {
-            //¦º¤`
-            FinalManager.instance.GameOver("¬D¾Ô¥¢±Ñ");
+            //æ­»äº¡
+            FinalManager.instance.GameOver("æŒ‘æˆ°å¤±æ•—");
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            //¹LÃö
-            FinalManager.instance.GameOver("¹CÀ¸³q¹L");
+            //éé—œ
+            FinalManager.instance.GameOver("éŠæˆ²é€šé");
         }
     }
 }

@@ -1,26 +1,26 @@
-using UnityEngine.UI;
+ï»¿using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace bearfall
 {
     /// <summary>
-    /// ¿ï³æºŞ²z¾¹
+    /// é¸å–®ç®¡ç†å™¨
     /// </summary>
 
     public class MenuManager : MonoBehaviour
     {
         /// <summary>
-        /// ¶}©l¹CÀ¸
+        /// é–‹å§‹éŠæˆ²
         /// </summary>
         private Button btnPlay;
         private void Awake()
         {
-            btnPlay = GameObject.Find("¶}©l¹CÀ¸").GetComponent<Button>();
+            btnPlay = GameObject.Find("é–‹å§‹éŠæˆ²").GetComponent<Button>();
             btnPlay.onClick.AddListener(StartGame);
         }
         private void StartGame()
         {
-            SceneManager.LoadScene("¹CÀ¸³õ´º");
+            SceneManager.LoadScene("éŠæˆ²å ´æ™¯");
         }
     }
 }

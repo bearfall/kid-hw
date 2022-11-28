@@ -1,29 +1,29 @@
-
+ï»¿
 using UnityEngine;
 
 namespace bearfall
 {
     /// <summary>
-    /// §R°£ª«¥ó
+    /// åˆªé™¤ç‰©ä»¶
     /// </summary>
 
     public class DestroyObject : MonoBehaviour
     {
-        [SerializeField, Header("§R°£®É¶¡"), Range(0, 3)]
+        [SerializeField, Header("åˆªé™¤æ™‚é–“"), Range(0, 3)]
         private float destroyTime = 0.5f;
 
         private void Awake()
         {
-            //gameObject ¦¹¸}¥»ªº¹CÀ¸ª«¥ó
-            //§R°£(ª«¥ó¡A§R°£®É¶¡)
+            //gameObject æ­¤è…³æœ¬çš„éŠæˆ²ç‰©ä»¶
+            //åˆªé™¤(ç‰©ä»¶ï¼Œåˆªé™¤æ™‚é–“)
             Destroy(gameObject, destroyTime);
         }
-        //¥i¨£¨Æ¥ó:·í´è¬V¤¸¥ó(Rander)¥X²{¦bScene©ÎGame®É°õ¦æ¤@¦¸
+        //å¯è¦‹äº‹ä»¶:ç•¶æ¸²æŸ“å…ƒä»¶(Rander)å‡ºç¾åœ¨Sceneæˆ–Gameæ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnBecameVisible()
         {
             
         }
-        //¥i¨£¨Æ¥ó:·í´è¬V¤¸¥ó(Rander)¥X²{¦bScene©ÎGame®É°õ¦æ¤@¦¸
+        //å¯è¦‹äº‹ä»¶:ç•¶æ¸²æŸ“å…ƒä»¶(Rander)å‡ºç¾åœ¨Sceneæˆ–Gameæ™‚åŸ·è¡Œä¸€æ¬¡
         private void OnBecameInvisible()
         {
             Destroy(gameObject);
